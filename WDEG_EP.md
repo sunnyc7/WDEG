@@ -1,9 +1,9 @@
 # WDEG EP
 
 ## CFG
-- A very thorough overview of CFG by LucasG - https://lucasg.github.io/2017/02/05/Control-Flow-Guard/
+- [2/5/2017] A very thorough overview of CFG by LucasG - https://lucasg.github.io/2017/02/05/Control-Flow-Guard/
 - CFG Property Pages by LucasG - https://github.com/processhacker/processhacker/pull/101
-- Trendmicro. Jack Tang - CFG - https://assets/wp/exploring-control-flow-guard-in-windows10.pdf
+- [2/7/2015] Trendmicro. Jack Tang - CFG - https://assets/wp/exploring-control-flow-guard-in-windows10.pdf
 
 ### Compiler
 - Needs to be >= VS2015 `msvc /cfguard `
