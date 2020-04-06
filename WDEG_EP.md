@@ -1,5 +1,11 @@
 # WDEG EP
 
+## ASLR
+
+## DEP
+
+## SEHOP
+
 ## CFG
 - [2/5/2017] A very thorough overview of CFG by LucasG - https://lucasg.github.io/2017/02/05/Control-Flow-Guard/
 - CFG Property Pages by LucasG - https://github.com/processhacker/processhacker/pull/101
@@ -15,7 +21,9 @@ contain CFG Bitmap.
 ### Registry
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel: MitigationOptions
 
-### Weaknesses (JT/Trend)
+### Weaknesses (JT/Trend), LucasG, 
+- LG - Firstly it only check the call target, not the call arguments. 
+- JT - VS2015 and up /cfguard 
 - The CFGBitmap space’s base address is stored in a fixed addres,s which can be retrieved from user mode code. This was described in the implementation of CFG. This is important, security data but however, it can be easily gotten.
 - If the main executable is not enabled for CFG, the process is not protected by CFG even if it loaded a CFG-enabled module.
 - Based on Figure 20, if a process’s main executable has disabled DEP (the process’s ExecuteEnable is enabled by compiled with /NXCOMPAT:NO), it will bypass the CFG violation handle, even if the indirect call target address is invalid.
