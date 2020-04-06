@@ -51,7 +51,7 @@
 - 
 
 ### Bypass
-- 
+- Leaking Stack With SEH - https://improsec.com/tech-blog/back-to-basics-or-bypassing-control-flow-guard-with-structured-exception-handler #BBFail
 
 ### Weaknesses (JT/Trend), LucasG, 
 - LG - Firstly it only check the call target, not the call arguments. 
